@@ -36,7 +36,6 @@ yay -S --needed \
   librepods-git
 
 echo "Installing cargo packages..."
-cargo install cargo-binstall
 cargo binstall tree-sitter-cli
 
 echo "Installing lazyVim..."
@@ -52,3 +51,7 @@ git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
 
 echo "Enabling SDDM..."
 sudo systemctl enable sddm.service
+
+echo
+echo "Installation complete!"
+sudo reboot
