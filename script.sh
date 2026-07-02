@@ -18,6 +18,8 @@ sudo pacman -S --needed \
   yazi \
   nvim \
   lazygit \
+  nodejs \
+  npm \
   telegram-desktop \
   discord \
   sddm \
