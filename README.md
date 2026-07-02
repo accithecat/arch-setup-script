@@ -39,5 +39,5 @@ git clone https://github.com/accithecat/arch-setup-script
 cd arch-setup-script
 ```
 ```bash
-./script.sh
+bash script.sh
 ```
