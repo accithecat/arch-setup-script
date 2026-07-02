@@ -21,6 +21,7 @@ sudo pacman -S --needed \
   telegram-desktop \
   discord \
   sddm \
+  libreoffice-still \
   cava \
   cmatrix
 
