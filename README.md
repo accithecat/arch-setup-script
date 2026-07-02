@@ -13,6 +13,7 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [sddm](https://github.com/sddm/sddm)
 - [silent-sddm](https://github.com/uiriansan/SilentSDDM)
 - [proton-vpn-cli](https://github.com/ProtonVPN/proton-vpn-cli)
+- [libreoffice-still](https://libreoffice.org/)
 - [cava](https://github.com/karlstav/cava)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
