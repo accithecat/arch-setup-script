@@ -33,7 +33,7 @@ sudo pacman -S --needed proton-vpn-cli
 echo "Installing yay packages..."
 yay -S --needed \
   sidra-bin \
-  librepods-git
+  librepods
 
 echo "Installing cargo packages..."
 cargo binstall tree-sitter-cli
