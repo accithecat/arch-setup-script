@@ -24,10 +24,8 @@ sudo pacman -S --needed \
   cava \
   cmatrix
 
-echo "Enabling and Starting services..."
-sudo systemctl enable --now \
-  sddm.service \
-  NetworkManager.service
+echo "Enabling NetworkManager..."
+sudo systemctl enable --now NetworkManager.service
 
 echo "Finishing pacman packages..."
 sudo pacman -S --needed proton-vpn-cli
@@ -51,3 +49,6 @@ git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
   cd SilentSDDM
   ./install.sh
 )
+
+echo "Enabling SDDM..."
+sudo systemctl enable sddm.service
