@@ -17,8 +17,11 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
 
+# WARNING ⚠️
+just in case anybody uses this script, it is VERY recommended to use it on a fresh install of arch linux or any arch-based os
+
 # prerequisites
- - git, base-devel, rust, & yay
+ - git, base-devel, rust, cargo-binstall & yay
    
 ```bash
 sudo pacman -S --needed git base-devel rust
@@ -28,6 +31,9 @@ git clone https://aur.archlinux.org/yay.git
 ```
 ```bash
 cd yay && makepkg -si
+```
+```bash
+cargo install cargo-binstall
 ```
 
 # download and running
