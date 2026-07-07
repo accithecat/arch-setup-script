@@ -14,6 +14,8 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [silent-sddm](https://github.com/uiriansan/SilentSDDM)
 - [proton-vpn-cli](https://github.com/ProtonVPN/proton-vpn-cli)
 - [libreoffice-still](https://libreoffice.org/)
+- [pywal](https://github.com/dylanaraps/pywal)
+- [wf-recorder](https://github.com/ammen99/wf-recorder)
 - [cava](https://github.com/karlstav/cava)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
