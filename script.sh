@@ -25,6 +25,8 @@ sudo pacman -S --needed \
   sddm \
   libreoffice-still \
   cava \
+  python-pywal \
+  wf-recorder \
   cmatrix
 
 echo "Enabling NetworkManager..."
