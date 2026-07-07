@@ -1,7 +1,10 @@
 # arch-setup-script
+
 A lil script i made to download all the stuff i personally use in case i need to redownload my os for some reason
 
 # contents
+
+- [dank material shell](https://danklinux.com/)
 - [yazi](https://yazi-rs.github.io/)
 - [neovim](https://neovim.io/)
 - [lazyvim](https://www.lazyvim.org/)
@@ -20,33 +23,16 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
 
-# WARNING ⚠️
-just in case anybody uses this script, it is VERY recommended to use it on a fresh install of arch linux or any arch-based os
-
-# prerequisites
- - git, base-devel, rust, cargo-binstall & yay
-   
-```bash
-sudo pacman -S --needed git base-devel rust
-```
-```bash
-git clone https://aur.archlinux.org/yay.git
-```
-```bash
-cd yay && makepkg -si
-```
-```bash
-cargo install cargo-binstall
-```
-
 # download and running
 
+the only prerequisite you need before running the script is curl (in case you distro doesn't include it)
+
 ```bash
-git clone https://github.com/accithecat/arch-setup-script
+sudo pacman -S curl
 ```
+
+then, just run the script on your terminal
+
 ```bash
-cd arch-setup-script
-```
-```bash
-bash script.sh
+curl -fsSL -o install.sh https://raw.githubusercontent.com/accithecat/arch-setup-script/main/script.sh && bash script.sh
 ```

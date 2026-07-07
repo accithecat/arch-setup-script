@@ -2,6 +2,20 @@
 
 set -e
 
+echo "Installing prequisites..."
+sudo pacman -S --needed \
+  base-devel \
+  git \
+  rust
+
+cargo install cargo-binstall
+
+git clone https://aur.archlinux.org/yay.git
+cd yay && makepkg -si
+
+echo "Installing desktop manager"
+curl -fsSL https://install.danklinux.com | sh
+
 echo "Installing pacman packages..."
 sudo pacman -S --needed \
   ttf-0xproto-nerd \
