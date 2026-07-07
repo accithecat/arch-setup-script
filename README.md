@@ -23,9 +23,11 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
 
-# > [!WARNING]
+# WARNING!
 
 this script recommended to be ran on a fresh arch linux install (or any arch based os) ONCE
+
+also, this script has only been tested in vanilla Arch Linux and CachyOS for now
 
 # download and running
 
