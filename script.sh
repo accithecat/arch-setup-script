@@ -2,7 +2,10 @@
 
 set -e
 
-echo "Installing prequisites..."
+echo "Acci's Arch Setup Script v1.4"
+echo
+
+echo "Installing prerequisites..."
 sudo pacman -S --needed \
   base-devel \
   git \
@@ -11,13 +14,17 @@ sudo pacman -S --needed \
 cargo install cargo-binstall
 
 git clone https://aur.archlinux.org/yay.git
-cd yay && makepkg -si
+
+(
+  cd yay
+  makepkg -si --noconfirm
+)
 
 echo "Installing desktop manager"
 curl -fsSL https://install.danklinux.com | sh
 
 echo "Installing pacman packages..."
-sudo pacman -S --needed \
+sudo pacman -S --needed --noconfirm \
   ttf-0xproto-nerd \
   ffmpeg \
   7zip \
@@ -39,6 +46,7 @@ sudo pacman -S --needed \
   sddm \
   libreoffice-still \
   cava \
+  networkmanager \
   python-pywal \
   wf-recorder \
   cmatrix
@@ -47,10 +55,10 @@ echo "Enabling NetworkManager..."
 sudo systemctl enable --now NetworkManager.service
 
 echo "Finishing pacman packages..."
-sudo pacman -S --needed proton-vpn-cli
+sudo pacman -S --needed --noconfirm proton-vpn-cli
 
 echo "Installing yay packages..."
-yay -S --needed \
+yay -S --needed --noconfirm \
   sidra-bin \
   librepods
 
@@ -71,6 +79,10 @@ git clone -b main --depth=1 https://github.com/uiriansan/SilentSDDM
 echo "Enabling SDDM..."
 sudo systemctl enable sddm.service
 
+rm -rf yay
+rm -rf SilentSDDM
+
 echo
-echo "Installation complete!"
+echo "Installation complete! Rebooting in 10 seconds..."
+sleep 10
 sudo reboot
