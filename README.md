@@ -40,5 +40,5 @@ sudo pacman -S curl
 then, just run the script on your terminal
 
 ```bash
-curl -fsSL -o install.sh https://raw.githubusercontent.com/accithecat/arch-setup-script/main/script.sh && bash script.sh
+curl -fsSL -o script.sh https://raw.githubusercontent.com/accithecat/arch-setup-script/main/script.sh && bash script.sh
 ```
