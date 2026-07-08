@@ -6,7 +6,7 @@ echo "Acci's Arch Setup Script v1.4"
 echo
 
 echo "Installing prerequisites..."
-sudo pacman -S --needed \
+sudo pacman -S --needed --noconfirm \
   base-devel \
   git \
   rust
@@ -47,6 +47,7 @@ sudo pacman -S --needed --noconfirm \
   libreoffice-still \
   cava \
   networkmanager \
+  fastfetch \
   python-pywal \
   wf-recorder \
   cmatrix
