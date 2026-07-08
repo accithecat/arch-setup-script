@@ -19,6 +19,7 @@ A lil script i made to download all the stuff i personally use in case i need to
 - [libreoffice-still](https://libreoffice.org/)
 - [pywal](https://github.com/dylanaraps/pywal)
 - [wf-recorder](https://github.com/ammen99/wf-recorder)
+- [fastfetch](https://github.com/fastfetch-cli/fastfetch)
 - [cava](https://github.com/karlstav/cava)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
 - & and all the requirements needed to install them.
